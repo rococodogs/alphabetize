@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/malantonio/alphabetize.js/issues"
   },
-  "homepage": "https://github.com/malantonio/alphabetize.js"
+  "homepage": "https://github.com/malantonio/alphabetize.js",
+  "bin": {
+    "alphabetize": "./cli.js"
+  }
 }
