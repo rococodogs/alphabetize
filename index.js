@@ -2,7 +2,7 @@ module.exports = alphabetize;
 
 function alphabetize(str) {
     return str
-    .replace(/[\?\!\@\#\$\%\^\&\*\(\)\,\.\{\}\[\}\"\'\:\;\~\`\<\>\_\-\+\=\\\|]+/g, '')
+    .replace(/[\?\!\@\#\$\%\^\&\*\(\)\,\.\{\}\[\}\"\:\;\~\`\<\>\+\=\\\|0-9]+/g, '')
     .split(/\s/)
     .sort(function(a,b){
         if ( a === b ) { return 0; }
