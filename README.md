@@ -1,5 +1,5 @@
-alphabetize.js
-==============
+alphabetize
+===========
 
 sort a string alphabeticallly
 

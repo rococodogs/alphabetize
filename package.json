@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/malantonio/alphabetize.js"
+    "url": "http://github.com/malantonio/alphabetize"
   },
   "keywords": [
     "string",
@@ -22,9 +22,9 @@
   "author": "Adam Malantonio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/malantonio/alphabetize.js/issues"
+    "url": "https://github.com/malantonio/alphabetize/issues"
   },
-  "homepage": "https://github.com/malantonio/alphabetize.js",
+  "homepage": "https://github.com/malantonio/alphabetize",
   "bin": {
     "alphabetize": "./cli.js"
   }
