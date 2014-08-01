@@ -1,0 +1,28 @@
+{
+  "name": "alphabetize",
+  "version": "1.0.0",
+  "description": "sort a string alphabetically",
+  "main": "index.js",
+  "dependencies": {
+    "tape": "^2.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/malantonio/alphabetize.js"
+  },
+  "keywords": [
+    "string",
+    "sort",
+    "alphabetical"
+  ],
+  "author": "Adam Malantonio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malantonio/alphabetize.js/issues"
+  },
+  "homepage": "https://github.com/malantonio/alphabetize.js"
+}
