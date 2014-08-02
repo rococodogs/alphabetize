@@ -1,5 +1,5 @@
 var test = require('tape');
-var alph = require('./');
+var alph = require('./alphabetize');
 
 test('returns string sorted alphabetically', function(t) {
     var sample = "the cat is faster than the dog",
