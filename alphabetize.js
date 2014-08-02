@@ -1,4 +1,6 @@
-module.exports = alphabetize;
+if ( typeof module !== 'undefined' ) {
+    module.exports = alphabetize;
+}
 
 function alphabetize(str) {
     return str

@@ -5,6 +5,8 @@ sort a string alphabeticallly
 
 ## usage
 
+with node
+
 ```javascript
 var alph = require('alphabetize');
 
@@ -19,6 +21,16 @@ or from the command line
 ##-> a file of test text
 > echo "dogs vs cats" | alphabetize
 ##-> cats dogs vs
+```
+
+or in the browser
+
+```html
+<script src="alphabetize.js"></script>
+<script>
+var txt = document.getElementById('txt');
+txt.textContent = alphabetize(txt.textContent);
+</script>
 ```
 
 ## license
