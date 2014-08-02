@@ -1,19 +1,7 @@
 #!/usr/local/bin/node
 
-var alph = require('./');
+var alph = require('./alphabetize');
 var str  = '';
-
-process.stdin.on('readable', function() {
-    var chunk = process.stdin.read();
-    if ( chunk !== null ) {
-        str += chunk.toString();
-    }
-});
-
-process.stdin.on('end', function() {
-    console.log(alph(str));
-    process.exit();
-});
 
 if ( process.argv.length === 3 ) {
     var fs = require('fs');
@@ -24,5 +12,32 @@ if ( process.argv.length === 3 ) {
             console.log(alph(data.toString()));
             process.exit();
         }
-    });
+    });   
+} else {
+    // isTTY solution from http://stackoverflow.com/a/15485424
+    if ( !process.stdin.isTTY ) {
+        process.stdin.on('readable', function() {
+            var chunk = process.stdin.read();
+            if ( chunk ) {
+                str += chunk.toString();
+            }
+        });
+
+        process.stdin.on('end', function() {
+            if ( str !== '' ) {
+                console.log(alph(str));
+                process.exit();
+            }
+        });
+    } else {
+        usage();
+        process.exit();
+    }
+}
+
+function usage() {
+    console.log('Usage: alphabetize <file>');
+    console.log('       alphabetizes a file to stdout ');
+    console.log('-or- ');
+    console.log('       pipe a string into alphabetize');
 }

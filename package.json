@@ -1,8 +1,8 @@
 {
   "name": "alphabetize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "sort a string alphabetically",
-  "main": "index.js",
+  "main": "alphabetize.js",
   "dependencies": {
     "tape": "^2.13.4"
   },
