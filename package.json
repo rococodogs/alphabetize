@@ -1,12 +1,12 @@
 {
   "name": "alphabetize",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "sort a string alphabetically",
   "main": "alphabetize.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "tape": "^2.13.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "node test.js"
   },
@@ -27,5 +27,18 @@
   "homepage": "https://github.com/malantonio/alphabetize",
   "bin": {
     "alphabetize": "./cli.js"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
   }
 }

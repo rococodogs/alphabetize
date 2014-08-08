@@ -1,6 +1,8 @@
 alphabetize
 ===========
 
+[![browser support](https://ci.testling.com/malantonio/alphabetize.png)](https://ci.testling.com/malantonio/alphabetize)
+
 sort a string alphabeticallly
 
 ## usage

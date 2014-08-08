@@ -7,9 +7,12 @@ function alphabetize(str) {
     .replace(/[\?\!\@\#\$\%\^\&\*\(\)\,\.\{\}\[\}\"\:\;\~\`\<\>\+\=\\\|0-9]+/g, '')
     .split(/\s/)
     .sort(function(a,b){
-        if ( a === b ) { return 0; }
+        aye = a.toLowerCase();
+        bee = b.toLowerCase();
+
+        if ( aye === bee ) { return 0; }
         else {
-            return a.toLowerCase() < b.toLowerCase() ? -1 : 1;
+            return aye < bee ? -1 : 1;
         }
     })
     .join(' ')
