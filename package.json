@@ -1,6 +1,6 @@
 {
   "name": "alphabetize",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "sort a string alphabetically",
   "main": "alphabetize.js",
   "dependencies": {},

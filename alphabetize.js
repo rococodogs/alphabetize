@@ -7,8 +7,9 @@ function alphabetize(str) {
     .replace(/[\?\!\@\#\$\%\^\&\*\(\)\,\.\{\}\[\}\"\:\;\~\`\<\>\+\=\\\|0-9]+/g, '')
     .split(/\s/)
     .sort(function(a,b){
-        aye = a.toLowerCase();
-        bee = b.toLowerCase();
+        var aye = a.toLowerCase()
+          , bee = b.toLowerCase()
+          ;
 
         if ( aye === bee ) { return 0; }
         else {
