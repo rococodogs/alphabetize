@@ -29,7 +29,7 @@
     "alphabetize": "./cli.js"
   },
   "testling": {
-    "files": "test/*.js",
+    "files": "test.js",
     "browsers": [
       "ie/6..latest",
       "chrome/22..latest",
