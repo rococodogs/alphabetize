@@ -12,7 +12,7 @@ with node
 ```javascript
 var alph = require('alphabetize');
 
-console.log('i am a happy string! maybe the happiest?');
+console.log(alph('i am a happy string! maybe the happiest?'));
 //-> 'a am happiest happy i maybe string the'
 ```
 
