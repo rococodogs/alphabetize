@@ -4,7 +4,8 @@ if ( typeof module !== 'undefined' ) {
 
 function alphabetize(str) {
     return str
-    .replace(/[\?\!\@\#\$\%\^\&\*\(\)\,\.\{\}\[\}\"\:\;\~\`\<\>\+\=\\\|0-9]+/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/[\t\-\?\!\@\#\$\%\^\&\*\(\)\,\.\{\}\[\}\"\:\;\~\`\<\>\+\=\\\|0-9]+/g, '')
     .split(/\s/)
     .sort(function(a,b){
         var aye = a.toLowerCase()
@@ -17,5 +18,6 @@ function alphabetize(str) {
         }
     })
     .join(' ')
+    .trim()
     ;
 }
