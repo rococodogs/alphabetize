@@ -26,3 +26,11 @@ test('dumps punctuation', function(t) {
     t.equal(alph(sample), expect);
     t.end();
 });
+
+test('gets rid of excess whitespace', function(t) {
+    var sample = "         no  dog   is \t faster than \n cat!        "
+      , expect = "cat dog faster is no than";
+
+    t.equal(alph(sample), expect);
+    t.end();
+})
