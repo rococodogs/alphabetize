@@ -1,7 +1,7 @@
 alphabetize
 ===========
 
-[![browser support](https://ci.testling.com/malantonio/alphabetize.png)](https://ci.testling.com/malantonio/alphabetize)
+[![Build Status](https://travis-ci.org/malantonio/alphabetize.svg?branch=master)](https://travis-ci.org/malantonio/alphabetize)
 
 sort a string alphabeticallly
 
