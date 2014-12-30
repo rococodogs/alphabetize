@@ -5,7 +5,7 @@
   "main": "alphabetize.js",
   "dependencies": {},
   "devDependencies": {
-    "tape": "3.*"
+    "tape": "3.0.0"
   },
   "scripts": {
     "test": "node test.js"
